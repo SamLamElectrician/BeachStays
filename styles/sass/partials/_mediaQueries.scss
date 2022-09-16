@@ -1,0 +1,356 @@
+@use "variables" as *;
+
+//media queries for 500
+@media (max-width: 600px) {
+  //media for homepage
+
+  header {
+    nav {
+      display: none;
+    }
+    .disappear {
+      display: contents;
+    }
+    .headerBar {
+      gap: 40%;
+    }
+    span {
+      font-size: 3.5rem;
+    }
+  }
+
+  .visitGuyana {
+    display: block;
+
+    .visitContainer {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 6%;
+    }
+    .guyanaImgBox {
+      width: 100%;
+      margin: 0;
+      box-shadow: none;
+    }
+  }
+
+  .photoGallery {
+    display: block;
+    .photoGalleryBox {
+      margin-bottom: 5%;
+    }
+  }
+
+  .infoNav {
+    padding-bottom: 8%;
+    ul {
+      display: block;
+    }
+    .infoCard {
+      width: 100%;
+    }
+  }
+
+  .fourSquares {
+    display: block;
+    & button {
+      width: 40%;
+      margin: 0 auto;
+    }
+    .planAhead {
+      width: 90%;
+      padding-bottom: 5%;
+    }
+    .newLocations {
+      width: 90%;
+      margin: 0 auto;
+      padding-bottom: 5%;
+    }
+    .leftColumn {
+      & img {
+        box-shadow: none;
+        border-bottom: 20px solid $Cyan;
+      }
+    }
+    .rightColumn {
+      display: block;
+      & img {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        border-bottom: 20px solid $Cyan;
+      }
+    }
+  }
+
+  .freeTrip {
+    width: 90%;
+  }
+
+  //media for blog
+
+  .leftCard {
+    width: 100%;
+    h1 {
+      margin-top: -20%;
+      padding-bottom: 5%;
+    }
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  form {
+    width: 100%;
+    display: block;
+  }
+  textarea {
+    width: 100%;
+    height: 40vw;
+  }
+  .inputContact {
+    display: block;
+  }
+  input[type="email"] {
+    width: 100%;
+  }
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  //media for contact
+  .contactMain{
+    flex-flow:  row wrap;
+  }
+
+  .contactHeader{
+    margin: 20% -27% 0% 0%;
+    width: 50vw;
+  }
+
+  .contacts{
+    width: 100%;
+    text-align: center;
+    .socialMedia{
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .contactInfo{
+        width: 100%;
+    }
+  }
+  
+  
+   
+   
+
+}
+
+// media queries for 800
+@media (max-width: 800px) {
+  // media for homepage
+  .headerBar {
+    nav {
+      display: none;
+    }
+    .disappear {
+      display: contents;
+    }
+  }
+
+  .visitGuyana {
+    .guyanaImgBox {
+      box-shadow: none;
+    }
+  }
+
+  .infoNav {
+    padding-bottom: 5%;
+    ul {
+      display: block;
+    }
+    .infoCard {
+      width: 100%;
+    }
+  }
+
+  .fourSquares {
+    & button {
+      width: 60%;
+    }
+    .rightColumn {
+      & img {
+        margin: 0;
+        box-shadow: none;
+        margin: 5% 0;
+      }
+    }
+    .leftColumn {
+      & img {
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+    .planAhead {
+      width: 70%;
+    }
+    .newLocations {
+      width: 70%;
+    }
+  }
+
+  .freeTrip {
+    width: 90%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+  //media for blog
+  .leftCard {
+    width: 100%;
+    h1 {
+      margin-top: -20%;
+      padding-bottom: 5%;
+    }
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  form {
+    width: 100%;
+    display: block;
+  }
+  textarea {
+    width: 100%;
+    height: 40vw;
+  }
+  .inputContact {
+    display: block;
+  }
+  input[type="email"] {
+    width: 100%;
+  }
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  //media for contact
+  .contactMain{
+    flex-flow:  row wrap;
+  }
+
+  .contactHeader{
+    margin: 10% -27% 50% 0%;
+    width: 50vw;
+  }
+
+  .contacts{
+    width: 100%;
+    text-align: center;
+    .socialMedia{
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .contactInfo{
+        width: 100%;
+    }
+  }
+}
+
+
+// media queries for 1000
+@media (max-width: 1000px) {
+  // media for homepage
+  .headerBar {
+    nav {
+      display: none;
+    }
+    .disappear {
+      display: contents;
+    }
+  }
+
+  .visitGuyana {
+    .guyanaImgBox {
+      box-shadow: none;
+    }
+  }
+
+  .infoNav {
+    padding-bottom: 5%;
+    ul {
+      display: block;
+    }
+    .infoCard {
+      width: 100%;
+    }
+  }
+
+  .fourSquares {
+    .planAhead {
+      width: 80%;
+    }
+    .newLocations {
+      width: 80%;
+    }
+  }
+
+  .planAhead {
+    width: 70%;
+    height: 20%;
+  }
+  .newLocations {
+    width: 70%;
+  }
+
+  .freeTrip {
+    width: 90%;
+  }
+
+  //media for blog
+
+  .leftCard {
+    width: 100%;
+    h1 {
+      margin-top: -20%;
+      padding-bottom: 5%;
+    }
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  form {
+    width: 100%;
+    display: block;
+  }
+  textarea {
+    width: 100%;
+    height: 40vw;
+  }
+  .inputContact {
+    display: block;
+  }
+  input[type="email"] {
+    width: 100%;
+  }
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  //media for contact
+
+   .contactHeader{
+    margin: 10% -27% 0% 0%;
+    width: 50vw;
+  }
+}

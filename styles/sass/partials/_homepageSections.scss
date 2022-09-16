@@ -1,0 +1,142 @@
+@use 'placeholder';
+@use "variables" as *;
+
+
+.visitGuyana{
+    display: flex;
+    .visitContainer{
+        width: 60%;
+        font-size: 1rem;
+
+    }
+    .guyanaImgBox{
+        box-shadow: -20px 20px $Cyan;
+        margin-left: 10%;
+    }
+    h2{
+        font-size: 2rem;
+
+    }
+
+}
+// photogallery styling
+.photoGallery{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    background-color: $lightBlue;
+    width: 100%;
+    padding: 5%;
+    max-width: 100%;
+}
+
+//information styling
+.infoNav{
+   ul{
+    display: flex;
+    flex-flow: row;
+    margin: 0 auto;
+    width: 90%;
+   }
+   a{
+    color: #000000;
+    display: flex;
+    align-items: center;
+   }
+   h3{
+    color: $Spruce
+   }
+   .infoIcon{
+    padding-right: 2%;
+    height: 2.2rem;
+    min-width: 2.2rem;
+    border-radius: 50%;
+    background-color: $Cyan;
+    color: $Icy;
+    margin-right: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .infoCard{
+    width: 50%;
+    margin-right: 5rem;
+   }
+}
+
+//4^2 styling
+.fourSquares{
+    background-color: $lightBlue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    & button{
+       width: 40%; 
+       border: none;
+    }
+    .rightColumn{
+        display: flex;
+        flex-direction: column-reverse;
+        & img{
+            margin: 10%  0% -6% 15%;
+            justify-self: end;
+            box-shadow: -20px 20px $Cyan;
+        }
+    }
+    .leftColumn{
+        display: flex;
+        flex-direction: column;
+        & img{
+            margin: -6%  15% 10% 0%;
+            box-shadow: 20px 20px $Cyan;
+        }
+    }
+    .planAhead{
+        width: 40%;
+        line-height: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .newLocations{
+        width: 40%;
+        line-height: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    h4{
+        font-size: 1.4rem;
+        color: $twilight;
+        margin-bottom: 0;
+    }
+   
+
+}
+
+//banner styling
+.banner{
+    width: 100%;
+    @extend %bg-image;
+    &.banner {
+        background-image: url("../../../images/banner-image.jpg");
+    }
+}
+
+//footer
+
+.freeTrip{
+    text-align: center;
+    width: 60%;
+    h6{
+        font-size: 2rem;
+        color: $Spruce;
+        margin-bottom: 0%;
+    }
+    p{
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+    }
+    
+}
+
+

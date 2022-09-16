@@ -1,0 +1,91 @@
+@use "variables" as *;
+
+
+.blogSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftCard{
+    width: 69%;
+    margin-top: -12%;
+    z-index: 100;
+    line-height: 1.3rem;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    h1{
+        margin:0% 6% 5% 12%;
+        font-size: 6rem;
+        color: white;
+    }
+    h2{
+        color: $Spruce;
+    }
+    h3{
+        color: $twilight;
+        font-style: italic;
+        .bora{
+            font-style: normal;
+            font-weight: bold;
+        }
+    }
+    .blogimgbox{
+        width: 100%;
+        img{
+            box-shadow: 20px 28px $Cyan;
+        }   
+    }
+    .blogContent{
+        padding: 6% 8% 0% 10%;
+        border-right: 3px solid $Cyan;
+        border-bottom: 3px solid $Cyan;
+    }
+    .commentSection{
+        padding: 0% 8% 0% 10%;
+        font-size: 1.1rem;
+        h4{
+            font-size: 1.7rem;
+        }
+        .commentBox{
+            display: flex;
+            padding-bottom: 6%;
+        }
+        .commentImage{
+            min-width: 12%;
+            max-width: 12%;
+            margin: 4% 5% 0% 0%;
+        }
+        h5{
+            color: $twilight;
+            font-size: 1.3rem;
+        }
+
+        
+    }
+}
+
+
+.sidebar{
+    width: 15vw;
+    margin-top: 4%;
+    line-height: 1.5rem;
+    .sidebarImage{
+        width: 100%;
+    }
+    h6{
+        color:$twilight;
+        margin: 0;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .findOutMore{
+        color: $Spruce;
+        font-weight: bold;
+        &:hover{
+            color: $twilight;
+        }
+    }
+    ul{
+        padding-left: 0;
+    }
+}

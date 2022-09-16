@@ -1,0 +1,70 @@
+@use 'variables' as *;
+@use 'placeholder';
+
+//generic styling
+//fix fonts
+header{
+    position: relative;
+    width: 100%;
+    @extend %bg-image;
+    &.homepage {
+        background-image: url("../../../images/home-image-1.jpg");
+    }
+    &.blog {
+        background-image:url("../../../images/blog-image-1.jpg");
+    }
+    &.contact {
+        background-image:url("../../../images/contact-image-1.jpg");
+    }
+    .headerBar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.8rem;
+        color: $Icy;
+        
+    }
+    .headerTitle {
+        display: flex;
+        color: $Cyan;
+        
+    }
+    nav {
+        display: flex;
+    }
+    a {
+        margin: 4%;
+    }
+    h1{
+        font-family: $font2;
+        color: $twilight;
+        font-size: 3rem;
+        position: absolute;
+        top: 30%;
+        right: 48%;
+        z-index: 100;
+        width: 30%;
+        
+    }
+    span{
+        color: $Spruce;
+        font-size: 6rem;
+    }
+    .disappear{
+        display: none;
+    }
+}
+
+.homepage{
+    .imageBox{
+        position: absolute;
+        top: 30%;
+        width: 26%;
+    }
+    img{
+        max-width: 100%;  
+        max-height: 100%;
+    }
+}
+
+// needs blog and contact styling, homepage relatively complete

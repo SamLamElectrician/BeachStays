@@ -1,0 +1,55 @@
+@use "variables" as *;
+
+
+
+.contactHeader{
+    color: $Icy;
+    margin:6% -4% 0% 0%;
+    font-size: 4rem;
+}
+
+.contactMain{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    .getInTouch{
+        margin-top: -8%;
+        box-shadow: 20px 20px $Cyan;
+        z-index: 1000;
+    }
+}
+
+.contacts{
+    display: flex;
+    flex-flow: row wrap;
+    width: 15vw;
+    line-height: 1.35rem;
+    font-size: 0.9rem;
+    z-index: 100;
+    margin-top: 4%;
+    .socialMedia{
+        display: flex;
+        margin: 4% -8% -27% 0%; 
+        gap: 4%;
+    }
+    a{
+        color: $Blk;
+        margin: 0% 20% 0% 0%;
+    }
+    .contactEmail{
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin: 1% 0 15% 0;
+
+    }
+
+}
+
+   
+
+
+
+
+
+
+
