@@ -4,18 +4,22 @@
 
 .visitGuyana{
     display: flex;
+    margin-top: 8%;
     .visitContainer{
         width: 60%;
         font-size: 1rem;
-
     }
     .guyanaImgBox{
-        box-shadow: -20px 20px $Cyan;
         margin-left: 10%;
+        & img{
+            box-shadow: -20px 20px $Cyan;
+        }
     }
     h2{
         font-size: 2rem;
-
+        font-weight: bold;
+        letter-spacing: .15rem;
+        color: $Spruce;
     }
 
 }
@@ -44,7 +48,8 @@
     align-items: center;
    }
    h3{
-    color: $Spruce
+    color: $Spruce;
+    font-size: 1.4rem;
    }
    .infoIcon{
     padding-right: 2%;
@@ -70,7 +75,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     & button{
-       width: 40%; 
+       width: 60%; 
        border: none;
     }
     .rightColumn{
@@ -105,7 +110,7 @@
         align-self: center;
     }
     h4{
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         color: $twilight;
         margin-bottom: 0;
     }

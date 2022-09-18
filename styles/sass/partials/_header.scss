@@ -27,6 +27,7 @@ header{
     .headerTitle {
         display: flex;
         color: $Cyan;
+        font-family: $play;
         
     }
     nav {
@@ -36,7 +37,6 @@ header{
         margin: 4%;
     }
     h1{
-        font-family: $font2;
         color: $twilight;
         font-size: 3rem;
         position: absolute;
@@ -49,6 +49,7 @@ header{
     span{
         color: $Spruce;
         font-size: 6rem;
+        font-family: $play;
     }
     .disappear{
         display: none;

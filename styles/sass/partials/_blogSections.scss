@@ -11,7 +11,6 @@
     margin-top: -12%;
     z-index: 100;
     line-height: 1.3rem;
-    letter-spacing: 1px;
     font-size: 1rem;
     h1{
         margin:0% 6% 5% 12%;
@@ -20,6 +19,7 @@
     }
     h2{
         color: $Spruce;
+        font-size: 1.9rem;
     }
     h3{
         color: $twilight;
@@ -69,6 +69,7 @@
     width: 15vw;
     margin-top: 4%;
     line-height: 1.5rem;
+    letter-spacing: 0.04rem;
     .sidebarImage{
         width: 100%;
     }

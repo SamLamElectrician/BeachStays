@@ -33,8 +33,9 @@ img{
 button{
     background-color: $twilight;
     color: $Icy;
-    padding: 7px 32px
-    // font-family
+    padding: 12px 32px;
+    font-family: $play;
+    border: none; 
 }
 .wrapper {
     max-width: 1400px;
@@ -78,4 +79,9 @@ input[type=text]{
 .blogButton{
     width: 97%;
     margin: 5% 0% 4% 0%
+}
+
+html{
+    font-family: $lato;
+    letter-spacing: 0.15rem;
 }

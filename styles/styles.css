@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -252,7 +253,9 @@ img {
 button {
   background-color: #063974;
   color: #FAFFFE;
-  padding: 7px 32px;
+  padding: 12px 32px;
+  font-family: "Playfair Display SC";
+  border: none;
 }
 
 .wrapper {
@@ -307,6 +310,11 @@ input[type=text] {
   margin: 5% 0% 4% 0%;
 }
 
+html {
+  font-family: "Lato";
+  letter-spacing: 0.15rem;
+}
+
 .banner, header {
   width: 100%;
   background-position: center center;
@@ -345,6 +353,7 @@ header .headerTitle {
   display: -ms-flexbox;
   display: flex;
   color: #50e3C2;
+  font-family: "Playfair Display SC";
 }
 header nav {
   display: -webkit-box;
@@ -355,7 +364,6 @@ header a {
   margin: 4%;
 }
 header h1 {
-  font-family: "Playfair Display SC", serif;
   color: #063974;
   font-size: 3rem;
   position: absolute;
@@ -367,6 +375,7 @@ header h1 {
 header span {
   color: #0C5F4C;
   font-size: 6rem;
+  font-family: "Playfair Display SC";
 }
 header .disappear {
   display: none;
@@ -396,7 +405,6 @@ header .disappear {
   margin-top: -12%;
   z-index: 100;
   line-height: 1.3rem;
-  letter-spacing: 1px;
   font-size: 1rem;
 }
 .leftCard h1 {
@@ -406,6 +414,7 @@ header .disappear {
 }
 .leftCard h2 {
   color: #0C5F4C;
+  font-size: 1.9rem;
 }
 .leftCard h3 {
   color: #063974;
@@ -454,6 +463,7 @@ header .disappear {
   width: 15vw;
   margin-top: 4%;
   line-height: 1.5rem;
+  letter-spacing: 0.04rem;
 }
 .sidebar .sidebarImage {
   width: 100%;
@@ -479,18 +489,24 @@ header .disappear {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 8%;
 }
 .visitGuyana .visitContainer {
   width: 60%;
   font-size: 1rem;
 }
 .visitGuyana .guyanaImgBox {
+  margin-left: 10%;
+}
+.visitGuyana .guyanaImgBox img {
   -webkit-box-shadow: -20px 20px #50e3C2;
           box-shadow: -20px 20px #50e3C2;
-  margin-left: 10%;
 }
 .visitGuyana h2 {
   font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  color: #0C5F4C;
 }
 
 .photoGallery {
@@ -529,6 +545,7 @@ header .disappear {
 }
 .infoNav h3 {
   color: #0C5F4C;
+  font-size: 1.4rem;
 }
 .infoNav .infoIcon {
   padding-right: 2%;
@@ -559,7 +576,7 @@ header .disappear {
   grid-template-columns: 1fr 1fr;
 }
 .fourSquares button {
-  width: 40%;
+  width: 60%;
   border: none;
 }
 .fourSquares .rightColumn {
@@ -618,7 +635,7 @@ header .disappear {
       align-self: center;
 }
 .fourSquares h4 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #063974;
   margin-bottom: 0;
 }
