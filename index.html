@@ -9,6 +9,8 @@
       src="https://kit.fontawesome.com/78bfa0dd20.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+   <script src="script.js" defer></script>
     <title>BeachStay Homepage</title>
   </head>
   <body>
@@ -21,10 +23,21 @@
           <a href="blog.html">Blog</a>
           <a href="contact.html">Contact</a>
         </nav>
-        <div class="disappear">
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#homeabout">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        
+        <a class="disappear" id="hamburger">
           <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
+        </a>
+        <a class="toggle" id='toggle'>
+          <i class="fa-solid fa-x"></i>
+        </a>
+
+      </div> <!--end of headerBar-->
       <h1>Welcome to <span>BEACHSTAYS</span></h1>
       <div class="imageBox web">
         <img src="/images/header-box.jpg" />

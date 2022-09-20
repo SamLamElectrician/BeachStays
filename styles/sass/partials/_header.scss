@@ -51,10 +51,29 @@ header{
         font-size: 6rem;
         font-family: $play;
     }
+        
     .disappear{
         display: none;
     }
+    .toggle{
+        display:none
+    }
+
+    .menu{
+        display: none;
+        position: absolute;
+        top: 8px;
+        width: 100%;
+        text-align: center;
+        background-color: rgb($Spruce, 0.7);
+        
+        & a{
+            opacity: 2;
+        }
+    }
+    
 }
+
 
 .homepage{
     .imageBox{
@@ -68,4 +87,4 @@ header{
     }
 }
 
-// needs blog and contact styling, homepage relatively complete
+

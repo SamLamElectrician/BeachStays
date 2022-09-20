@@ -36,6 +36,12 @@ button{
     padding: 12px 32px;
     font-family: $play;
     border: none; 
+    &:hover{
+        color:$Cyan;
+    }
+    &:focus{
+        color: $Cyan;
+    }
 }
 .wrapper {
     max-width: 1400px;
@@ -50,6 +56,8 @@ form{
     background-color: white;
     display: flex;
     flex-flow: row wrap;
+    justify-items: center;
+    align-items: center;
     width: 45vw;
     padding: 4% 4% 4% 4%;
 }
@@ -84,4 +92,18 @@ input[type=text]{
 html{
     font-family: $lato;
     letter-spacing: 0.15rem;
+}
+
+.thankyou{
+    font-size: 1.6rem;
+    width: 30vw;
+    z-index: 100;
+    height: 25vw;
+    margin: 0 auto;
+    padding: 20% 0% 20% 0;
+    display: none;
+    & button{
+        margin: 10%
+    }
+    
 }

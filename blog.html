@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/78bfa0dd20.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <title>BeachStay Blog</title>
 </head>
 
@@ -17,15 +18,25 @@
   <header class="blog">
     <div class="headerBar">
       <div class="headerTitle">BEACHSTAYS</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="#blogabout">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+      <nav id="nav">
+          <a href="index.html">Home</a>
+          <a href="#blogabout">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
       </nav>
-      <div class="disappear">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#homeabout">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    
+    <a class="disappear" id="hamburger">
+      <i class="fa-solid fa-bars" id="3bars"></i>
+    </a>
+    <a class="toggle" id='toggle'>
+      <i class="fa-solid fa-x"></i>
+    </a>
     </div>
   </header>
   <main>
@@ -92,6 +103,11 @@
                 excepturi?
               </p>
             </div>
+            <div class="commentBox">
+              <h5>
+                <p></p>
+              </h5>
+            </div>
           </div>
           <form>
             <div class="inputContact">
@@ -147,6 +163,7 @@
 
   </section>
   <footer>Made by Sammy Lam At Juno College</footer>
+<script src="script.js"></script>
 </body>
 
 </html>
