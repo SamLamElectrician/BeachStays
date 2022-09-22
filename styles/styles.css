@@ -329,13 +329,60 @@ html {
   font-size: 1.6rem;
   width: 30vw;
   z-index: 100;
-  height: 25vw;
+  height: 30vw;
   margin: 0 auto;
   padding: 20% 0% 20% 0;
   display: none;
+  max-width: 100%;
 }
 .thankyou button {
   margin: 10%;
+}
+
+.toggle {
+  display: none;
+}
+
+.disappear {
+  display: none;
+  color: #50e3C2;
+  padding: 0;
+  margin: 0;
+}
+
+.invisible {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+.toggle {
+  color: #50e3C2;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  display: contents;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 30px;
+  width: 0;
+  position: fixed;
+  z-index: 60000000;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(12, 95, 76, 0.9);
+  padding-top: 30%;
+}
+.menu li {
+  margin: 10% 0% 10% 0%;
 }
 
 .banner, header {
@@ -399,23 +446,6 @@ header span {
   color: #0C5F4C;
   font-size: 6rem;
   font-family: "Playfair Display SC";
-}
-header .disappear {
-  display: none;
-}
-header .toggle {
-  display: none;
-}
-header .menu {
-  display: none;
-  position: absolute;
-  top: 8px;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(12, 95, 76, 0.7);
-}
-header .menu a {
-  opacity: 2;
 }
 
 .homepage .imageBox {
@@ -494,6 +524,9 @@ header .menu a {
 .leftCard .commentSection h5 {
   color: #063974;
   font-size: 1.3rem;
+}
+.leftCard .blogform {
+  margin: 0% 8% 0% 10%;
 }
 
 .sidebar {
@@ -758,20 +791,44 @@ footer {
   margin: 1% 0 15% 0;
 }
 
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 @media (max-width: 600px) {
+  header {
+    height: 500px;
+    margin-top: -8%;
+  }
   header .nav {
     display: none;
-  }
-  header .disappear {
-    display: contents;
   }
   header .headerBar {
     gap: 40%;
     width: 100%;
-    border: 1px solid red;
+    position: fixed;
+    top: 5px;
   }
   header span {
     font-size: 3.5rem;
+  }
+  header h1 {
+    position: static;
+    padding: 30% 0%;
+    width: 40%;
+  }
+  .menu {
+    top: 10px;
+  }
+  .homepage .imageBox {
+    display: none;
+  }
+  .disappear {
+    display: contents;
   }
   .visitGuyana {
     display: block;
@@ -864,6 +921,10 @@ footer {
     width: 100%;
     margin-bottom: 5%;
   }
+  .thankyou {
+    width: 80vw;
+    height: 60vw;
+  }
   .contactMain {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -890,11 +951,22 @@ footer {
   }
 }
 @media (max-width: 800px) {
+  .headerBar {
+    gap: 40%;
+    width: 100%;
+    position: fixed;
+  }
   .headerBar nav {
     display: none;
   }
-  .headerBar .disappear {
-    display: contents;
+  header {
+    height: 600px;
+  }
+  header h1 {
+    width: 50%;
+  }
+  .homepage .imageBox {
+    display: none;
   }
   .visitGuyana .guyanaImgBox {
     -webkit-box-shadow: none;
@@ -963,6 +1035,10 @@ footer {
     width: 100%;
     margin-bottom: 5%;
   }
+  .thankyou {
+    width: 80vw;
+    height: 60vw;
+  }
   .contactMain {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -994,6 +1070,14 @@ footer {
   }
   .headerBar .disappear {
     display: contents;
+  }
+  header {
+    padding-top: 3%;
+  }
+  header h1 {
+    position: static;
+    padding: 30% 0%;
+    width: 40%;
   }
   .visitGuyana .guyanaImgBox {
     -webkit-box-shadow: none;

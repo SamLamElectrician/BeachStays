@@ -6,11 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="./styles/styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script
-      src="https://kit.fontawesome.com/78bfa0dd20.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <script src="https://kit.fontawesome.com/78bfa0dd20.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  
   <title>BeachStay Blog</title>
 </head>
 
@@ -19,10 +17,10 @@
     <div class="headerBar">
       <div class="headerTitle">BEACHSTAYS</div>
       <nav id="nav">
-          <a href="index.html">Home</a>
-          <a href="#blogabout">About</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="#blogabout">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <ul class="menu" id="menu">
         <li><a href="index.html">Home</a></li>
@@ -30,13 +28,13 @@
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    
-    <a class="disappear" id="hamburger">
-      <i class="fa-solid fa-bars" id="3bars"></i>
-    </a>
-    <a class="toggle" id='toggle'>
-      <i class="fa-solid fa-x"></i>
-    </a>
+
+      <a class="disappear" id="hamburger">
+        <i class="fa-solid fa-bars" id="3bars"></i>
+      </a>
+      <a class="toggle" id='toggle'>
+        <i class="fa-solid fa-x"></i>
+      </a>
     </div>
   </header>
   <main>
@@ -75,7 +73,7 @@
             laborum amet laboriosam alias nesciunt corporis ipsum!</p>
         </div>
         <!--end of blog content-->
-        <div class="commentSection">
+        <div class="commentSection" id="commentSect">
           <h4>Comments:</h4>
           <div class="commentBox">
             <div class="commentImage">
@@ -103,13 +101,9 @@
                 excepturi?
               </p>
             </div>
-            <div class="commentBox">
-              <h5>
-                <p></p>
-              </h5>
-            </div>
           </div>
-          <form>
+        </div>
+          <form class="blogform">
             <div class="inputContact">
               <div class="label">
                 <div><label for="Name"></label></div>
@@ -122,18 +116,16 @@
             </div>
             <div class="inputMessage">
               <textarea name="message" id="message" placeholder="message" required=""></textarea>
-              <button type="submit" class="blogButton">Post Comment</button>
+              <button type="submit"  class="blogButton" id="gas">Post Comment</button>
             </div>
           </form>
-        </div>
-        
-        </form>
+      
         <!--end of form-->
       </div>
       <!--end of comment section-->
       </div>
       <!--end of left card-->
-      <div class="sidebar disappear">
+      <div class="sidebar">
         <div class="sidebarImageContainer">
           <img src="images/sidebar-image.jpg" alt="a beach house" class="sidebarImage">
         </div>
@@ -163,7 +155,7 @@
 
   </section>
   <footer>Made by Sammy Lam At Juno College</footer>
-<script src="script.js"></script>
+  <script src="blog.js"></script>
 </body>
 
 </html>

@@ -5,21 +5,38 @@
   //media for homepage
 
   header {
+    height: 500px;
+    margin-top: -8%;
     .nav {
       display: none;
     }
     
-    .disappear{
-      display: contents;
-    }
     .headerBar {
       gap: 40%;
       width: 100%;
-      border: 1px solid red;
+      position: fixed;
+      top: 5px;
     }
     span {
       font-size: 3.5rem;
     }
+    h1{
+      position:static;
+      padding: 30% 0%;
+      width: 40%;
+    }
+  }
+  .menu{
+    top: 10px
+  }
+
+  .homepage{
+    .imageBox{
+      display: none;
+    }
+  }
+  .disappear{
+    display: contents;
   }
 
   .visitGuyana {
@@ -122,7 +139,11 @@
     width: 100%;
     margin-bottom: 5%;
   }
-
+  
+  .thankyou{
+    width: 80vw;
+    height: 60vw;
+  }
   //media for contact
   .contactMain{
     flex-flow:  row wrap;
@@ -151,14 +172,29 @@
 // media queries for 800
 @media (max-width: 800px) {
   // media for homepage
-  .headerBar {
+  .headerBar { 
+    gap: 40%;
+    width: 100%;
+    position: fixed;
     nav {
       display: none;
     }
-    .disappear {
-      display: contents;
-    }
   }
+
+
+ header{
+  height: 600px;
+  
+  h1{
+    width: 50%;
+  }
+ }
+
+ .homepage{
+  .imageBox{
+    display: none;
+  }
+}
 
   .visitGuyana {
     .guyanaImgBox {
@@ -239,6 +275,10 @@
     width: 100%;
     margin-bottom: 5%;
   }
+  .thankyou{
+    width: 80vw;
+    height: 60vw;
+  }
 
   //media for contact
   .contactMain{
@@ -272,8 +312,17 @@
     nav {
       display: none;
     }
-    .disappear {
+    .disappear{
       display: contents;
+    }
+  }
+
+  header{
+    padding-top: 3%;
+    h1{
+      position:static;
+      padding: 30% 0%;
+      width: 40%;
     }
   }
 
