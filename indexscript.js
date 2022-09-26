@@ -14,3 +14,5 @@ function mobileMenu(){
 }
 
 
+const buttonPrev = document.querySelector("carouselButtonPrev")
+const buttonNew = document.querySelector("carouselButtonNext")

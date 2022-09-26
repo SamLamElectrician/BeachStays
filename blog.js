@@ -13,13 +13,14 @@ function mobileMenu(){
   toggle.classList.toggle("visible")
 }
 
-
-let blogbtn = document.getElementById("gas")
-const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 let email = document.getElementById("email")
 let commentSect = document.getElementById("commentSect")
 let msg = document.getElementById("message")
 let person = document.getElementById("Name")
+let blogbtn = document.getElementById("gas")
+const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+
 
 //div structure 
 
@@ -35,6 +36,9 @@ blogbtn.addEventListener("click", (event)=>{
       }
 });
 
+//task
+
+
 function comment(){
   
   const msg = document.getElementById("message").value
@@ -48,7 +52,7 @@ function comment(){
   let commenttxt = document.createElement("div")
   commenttxt.className = "commentText"
   let title = document.createElement('h5')
-  title.append(d)
+  title.append(d.toDateString())
   let info = document.createElement('p')
   info.append(msg)
 
@@ -57,10 +61,7 @@ function comment(){
   commenttxt.appendChild(title)
   commenttxt.appendChild(info)
   commentBx.appendChild(commenttxt)
-
   commentSect.appendChild(commentBx)
-
-
 
   //parent box == commentsection
   //append child to parent box
