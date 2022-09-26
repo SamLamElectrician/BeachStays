@@ -398,13 +398,13 @@ header {
   width: 100%;
 }
 header.homepage {
-  background-image: url("../../../images/home-image-1.jpg");
+  background-image: url("/images/home-image-1.jpg");
 }
 header.blog {
-  background-image: url("../../../images/blog-image-1.jpg");
+  background-image: url("/images/blog-image-1.jpg");
 }
 header.contact {
-  background-image: url("../../../images/contact-image-1.jpg");
+  background-image: url("/images/contact-image-1.jpg");
 }
 header .headerBar {
   display: -webkit-box;

@@ -8,13 +8,13 @@ header{
     width: 100%;
     @extend %bg-image;
     &.homepage {
-        background-image: url("../../../images/home-image-1.jpg");
+        background-image: url("/images/home-image-1.jpg");
     }
     &.blog {
-        background-image:url("../../../images/blog-image-1.jpg");
+        background-image:url("/images/blog-image-1.jpg");
     }
     &.contact {
-        background-image:url("../../../images/contact-image-1.jpg");
+        background-image:url("/images/contact-image-1.jpg");
     }
     .headerBar {
         display: flex;
