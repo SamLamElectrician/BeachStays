@@ -1,3 +1,5 @@
 # ProjectOneJuno
+https://sammylam.dev/
 
-Sammylam.dev for live link
+live link for website
+clear cache for chrome, if not, open in mozilla
